@@ -16435,9 +16435,7 @@ var Nav = function (_React$Component) {
     value: function render() {
       return _react2.default.createElement(
         'nav',
-        { style: {
-            position: this.state.position
-          } },
+        { style: { position: this.state.position } },
         _react2.default.createElement(
           'div',
           { className: 'container' },
@@ -16463,21 +16461,17 @@ var Nav = function (_React$Component) {
               { className: 'col-8' },
               _react2.default.createElement(
                 _reactResponsive2.default,
-                { query: '(max-device-width: 639px)' },
+                { query: '(max-width: 639px)' },
                 _react2.default.createElement(
                   'div',
-                  { className: 'menu', style: {
-                      display: 'block'
-                    }, onClick: this.onClickHandler },
+                  { className: 'menu', style: { display: 'block' }, onClick: this.onClickHandler },
                   _react2.default.createElement('span', null),
                   _react2.default.createElement('span', null),
                   _react2.default.createElement('span', null)
                 ),
                 _react2.default.createElement(
                   'ul',
-                  { className: 'dropdown-menu list-show', style: {
-                      display: this.state.menuDisplayStyle
-                    } },
+                  { className: 'dropdown-menu list-show', style: { display: this.state.menuDisplayStyle } },
                   _react2.default.createElement(
                     'li',
                     null,
@@ -16518,21 +16512,10 @@ var Nav = function (_React$Component) {
               ),
               _react2.default.createElement(
                 _reactResponsive2.default,
-                { query: '(min-device-width: 640px)' },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'menu', style: {
-                      display: 'none'
-                    } },
-                  _react2.default.createElement('span', null),
-                  _react2.default.createElement('span', null),
-                  _react2.default.createElement('span', null)
-                ),
+                { query: '(min-width: 640px)' },
                 _react2.default.createElement(
                   'ul',
-                  { className: 'dropdown-menu', style: {
-                      display: 'block'
-                    } },
+                  { className: 'dropdown-menu', style: { display: 'block' } },
                   _react2.default.createElement(
                     'li',
                     null,
