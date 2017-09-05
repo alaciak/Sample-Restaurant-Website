@@ -1,0 +1,68 @@
+nav {
+  min-height: 10vh;
+  background: map-get($color-background, header);
+  opacity: 0.9;
+  color: map-get($color-fonts, menu);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.7em;
+  font-size: 1.25em;
+
+  // .logo > p {
+  //   height: 100%;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
+
+  span {
+    font-size: 1.25em;
+    padding: 0 0.5em;
+    color: map-get($color-fonts, highlight);
+    font-family: $font-highlight;
+  }
+
+  .menu {
+    float: right;
+
+    span {
+      background-color: map-get($color-background, main);
+      display: block;
+      height: 0.15em;
+      margin: 0.3em;
+      width: 2em;
+    }
+  }
+
+  .dropdown-menu {
+    float: right;
+    li {
+      @extend %list-item;
+      padding: 0 0.8em;
+      @media (max-width: 735px) {
+        font-size: .8em;
+      }
+      @media (min-width: 640px) {
+        display: inline-block;
+      }
+      @media (min-width: 768px) {
+        font-size: 1.25;
+      }
+    }
+
+    a {
+      color: map-get($color-fonts, menu);
+      text-decoration: none;
+    }
+  }
+}
+
+.list-show {
+  background: map-get($color-background, header);
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 50px;
+  width: 100%;
+}

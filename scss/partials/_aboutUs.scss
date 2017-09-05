@@ -1,0 +1,78 @@
+.welcome-text {
+  text-align: center;
+  padding: 2em;
+  color: map-get($color-fonts, headings);
+
+  h2 {
+    font-size: 2em;
+    font-family: $font-highlight;
+    margin-bottom: 1em;
+
+    span {
+      color: map-get($color-fonts, highlight);
+    }
+  }
+
+  .button-read-more {
+    @extend %button;
+    background: map-get($color-background, button);
+    color: map-get($color-fonts, menu);
+    cursor: pointer;
+  }
+}
+
+.section-about-us {
+  display: flex;
+  flex-wrap: wrap;
+
+  h4 {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.5em;
+    font-size: 1.5em;
+  }
+
+  div {
+    @extend %box;
+    width: 50%;
+    padding: 1.5em;
+    text-align: center;
+    @media (max-width: 640px) {
+      width: 100%;
+    }
+  }
+
+  div:first-of-type {
+    background: map-get($color-background, article-main);
+    color: map-get($color-fonts, article);
+
+    h4 {
+      color: map-get($color-fonts, highlight);
+    }
+  }
+
+  div:nth-of-type(2) {
+    background: map-get($color-background, article-aside);
+    color: map-get($color-fonts, menu);
+
+    h4 {
+      color: map-get($color-fonts, main);
+    }
+  }
+
+  div:nth-of-type(4) {
+    background: map-get($color-background, button);
+    color: map-get($color-fonts, menu);
+
+    h4 {
+      color: map-get($color-fonts, main);
+    }
+  }
+}
+
+.about-us_photo {
+  background: url('../images/ingrediets_photo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

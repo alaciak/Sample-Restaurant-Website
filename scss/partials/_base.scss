@@ -1,0 +1,13 @@
+body {
+  font-family: $font-main;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  @media (min-width : 480px) {
+    font-size: 16px;
+  }
+}
+
+#app {
+  width: 100%;
+}

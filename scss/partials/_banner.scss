@@ -1,0 +1,63 @@
+.banner {
+  background-image: url('../images/background_main.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .arrow-left,
+  .arrow-right {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 1.5em;
+    width: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: map-get($color-fonts, menu);
+    border: 2px solid map-get($color-fonts, menu);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .arrow-left {
+    left: .7em;
+    @media (min-width: 640px) {
+      left: 2em;
+    }
+  }
+
+  .arrow-right {
+    right: .7em;
+    @media (min-width: 640px) {
+      right: 2em;
+    }
+  }
+
+  .banner-text {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .banner-heading {
+      text-align: center;
+      margin-top: 1em;
+      padding: 0.5em;
+      font-size: 3em;
+      font-family: $font-highlight;
+      color: map-get($color-fonts, highlight);
+    }
+
+    .banner-info {
+      width: 50%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 0.5em;
+      color: map-get($color-fonts, menu);
+      font-size: 1.5em;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+
+  .row {
+    @extend %clearfix;
+    width: 100%;
+    @for $i from 1 through $columns {
+      .col-#{$i} {
+        float: left;
+        width: 100% / $columns * $i;
+      }
+    }
+  }
+}
