@@ -25,7 +25,7 @@ class Banner extends React.Component {
   }
 
   handlePreviousShow = event => {
-      if (this.state.index < 0) {
+      if (this.state.index < 1) {
         this.setState({
           index: this.state.elements.length - 1,
           display: 'inline-block'
