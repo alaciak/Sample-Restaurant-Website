@@ -27,12 +27,18 @@
     @media (min-width: 640px) {
       left: 1.5em;
     }
+    @media (min-width: 768px) {
+      left: 3em;
+    }
   }
 
   .arrow-right {
     right: .7em;
     @media (min-width: 640px) {
       right: 1.5em;
+    }
+    @media (min-width: 768px) {
+      right: 3em;
     }
   }
 

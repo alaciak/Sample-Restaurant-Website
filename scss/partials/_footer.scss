@@ -1,0 +1,30 @@
+footer {
+  min-height: 10vh;
+  background: map-get($color-background, header);
+  color: map-get($color-fonts, menu);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .7em;
+  span {
+    font-size: 1.25em;
+    padding: 0 0.5em;
+    color: map-get($color-fonts, highlight);
+    font-family: $font-highlight;
+  }
+
+  // h5 {
+  //   color: map-get($color-fonts, highlight);
+  //   margin: .7em 0;
+  // }
+  //
+  // P, li {
+  //   padding: .3em 0;
+  //   list-style-type: none;
+  //   font-size: .8em;
+  //   a {
+  //     color: map-get($color-fonts, menu);
+  //   }
+  // }
+
+}

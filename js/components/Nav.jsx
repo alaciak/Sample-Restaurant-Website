@@ -46,7 +46,7 @@ class Nav extends React.Component {
                 <li><a href='#about-us'>About us</a></li>
                 <li><a href='#'>Book a table</a></li>
                 <li><a href='#'>Gallery</a></li>
-                <li><a href='#'>Contact us</a></li>
+                <li><a href='#contact-us'>Contact us</a></li>
               </ul>
             </MediaQuery>
           </div>
