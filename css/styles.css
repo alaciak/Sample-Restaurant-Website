@@ -218,7 +218,7 @@ nav .dropdown-menu li {
 
 @media (min-width: 640px) {
   .banner .arrow-left {
-    left: 2em;
+    left: 1.5em;
   }
 }
 
@@ -228,24 +228,30 @@ nav .dropdown-menu li {
 
 @media (min-width: 640px) {
   .banner .arrow-right {
-    right: 2em;
+    right: 1.5em;
   }
 }
 
 .banner .banner-text {
-  height: 50vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .banner .banner-text .banner-heading {
+  width: 70%;
   text-align: center;
-  margin-top: 1em;
-  padding: 0.5em;
+  margin: .5em auto;
   font-size: 3em;
   font-family: "Satisfy", cursive;
   color: #ffb70f;
+}
+
+@media (min-width: 640px) {
+  .banner .banner-text .banner-heading {
+    font-size: 3.5em;
+  }
 }
 
 .banner .banner-text .banner-info {
@@ -260,7 +266,7 @@ nav .dropdown-menu li {
 nav {
   min-height: 10vh;
   background: #000;
-  opacity: 0.9;
+  opacity: 0.8;
   color: #fff;
   display: flex;
   align-items: center;
@@ -293,7 +299,7 @@ nav .dropdown-menu {
 }
 
 nav .dropdown-menu li {
-  padding: 0 0.8em;
+  padding: .8em;
 }
 
 @media (max-width: 735px) {

@@ -1,7 +1,7 @@
 nav {
   min-height: 10vh;
   background: map-get($color-background, header);
-  opacity: 0.9;
+  opacity: 0.8;
   color: map-get($color-fonts, menu);
   display: flex;
   align-items: center;
@@ -9,12 +9,6 @@ nav {
   padding: 0 0.7em;
   font-size: 1.25em;
 
-  // .logo > p {
-  //   height: 100%;
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  // }
 
   span {
     font-size: 1.25em;
@@ -39,7 +33,7 @@ nav {
     float: right;
     li {
       @extend %list-item;
-      padding: 0 0.8em;
+      padding: .8em;
       @media (max-width: 735px) {
         font-size: .8em;
       }

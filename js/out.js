@@ -16477,7 +16477,7 @@ var Nav = function (_React$Component) {
                     null,
                     _react2.default.createElement(
                       'a',
-                      { href: '#' },
+                      { href: '#about-us' },
                       'About us'
                     )
                   ),
@@ -16521,7 +16521,7 @@ var Nav = function (_React$Component) {
                     null,
                     _react2.default.createElement(
                       'a',
-                      { href: '#' },
+                      { href: '#about-us' },
                       'About us'
                     )
                   ),
@@ -36421,18 +36421,94 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Banner = function (_React$Component) {
-  _inherits(Banner, _React$Component);
+var BannerItem = function (_React$Component) {
+  _inherits(BannerItem, _React$Component);
+
+  function BannerItem() {
+    _classCallCheck(this, BannerItem);
+
+    return _possibleConstructorReturn(this, (BannerItem.__proto__ || Object.getPrototypeOf(BannerItem)).apply(this, arguments));
+  }
+
+  _createClass(BannerItem, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { style: this.props.display },
+        _react2.default.createElement(
+          'h1',
+          { className: 'banner-heading' },
+          this.props.heading
+        ),
+        _react2.default.createElement(
+          'p',
+          { className: 'banner-info' },
+          this.props.info
+        )
+      );
+    }
+  }]);
+
+  return BannerItem;
+}(_react2.default.Component);
+
+var Banner = function (_React$Component2) {
+  _inherits(Banner, _React$Component2);
 
   function Banner(props) {
     _classCallCheck(this, Banner);
 
-    var _this = _possibleConstructorReturn(this, (Banner.__proto__ || Object.getPrototypeOf(Banner)).call(this, props));
+    var _this2 = _possibleConstructorReturn(this, (Banner.__proto__ || Object.getPrototypeOf(Banner)).call(this, props));
 
-    _this.state = {
-      elements: [_react2.default.createElement(BannerItem, { heading: 'Lorem ipsum dolor', info: 'Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.' }), _react2.default.createElement(BannerItem, { heading: 'Cras nec augue', info: 'Phasellus eu vulputate purus, a finibus arcu. Nunc eleifend vehicula eleifend.' }), _react2.default.createElement(BannerItem, { heading: 'Vivamus et vehicula libero', info: 'Maecenas tincidunt finibus rhoncus. In efficitur aliquam risus sed euismod.' })]
+    _this2.handlePreviousShow = function (event) {
+      if (_this2.state.display === 'inline-block') {
+        _this2.setState({
+          display: 'none'
+        });
+      }
+      _this2.setState({
+        index: _this2.state.index - 1
+      });
+      if (_this2.state.index < 0) {
+        _this2.setState({
+          index: _this2.state.elements.length - 1,
+          display: 'inline-block'
+        });
+      } else {
+        _this2.setState({
+          display: 'inline-block'
+        });
+      }
     };
-    return _this;
+
+    _this2.handleNextShow = function (event) {
+      if (_this2.state.display === 'inline-block') {
+        _this2.setState({
+          display: 'none'
+        });
+      }
+      _this2.setState({
+        index: _this2.state.index + 1
+      });
+      if (_this2.state.index >= _this2.state.elements.length) {
+        _this2.setState({
+          index: 0,
+          display: 'inline-block'
+        });
+      } else {
+        _this2.setState({
+          display: 'inline-block'
+        });
+      }
+    };
+
+    _this2.state = {
+      elements: [_react2.default.createElement(BannerItem, { display: _this2.props.display, heading: 'Lorem ipsum dolor', info: 'Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.' }), _react2.default.createElement(BannerItem, { display: _this2.props.display, heading: 'Cras nec augue', info: 'Phasellus eu vulputate purus, a finibus arcu. Nunc eleifend vehicula eleifend.' }), _react2.default.createElement(BannerItem, { display: _this2.props.display, heading: 'Vivamus et vehicula libero', info: 'Maecenas tincidunt finibus rhoncus. In efficitur aliquam risus sed euismod.' })],
+      index: 0,
+      display: 'inline-block'
+    };
+    return _this2;
   }
 
   _createClass(Banner, [{
@@ -36449,7 +36525,7 @@ var Banner = function (_React$Component) {
             { className: 'arrow-left', onClick: this.handlePreviousShow },
             '<'
           ),
-          this.state.elements[0],
+          this.state.elements[this.state.index],
           _react2.default.createElement(
             'div',
             { className: 'arrow-right', onClick: this.handleNextShow },
@@ -36461,38 +36537,6 @@ var Banner = function (_React$Component) {
   }]);
 
   return Banner;
-}(_react2.default.Component);
-
-var BannerItem = function (_React$Component2) {
-  _inherits(BannerItem, _React$Component2);
-
-  function BannerItem() {
-    _classCallCheck(this, BannerItem);
-
-    return _possibleConstructorReturn(this, (BannerItem.__proto__ || Object.getPrototypeOf(BannerItem)).apply(this, arguments));
-  }
-
-  _createClass(BannerItem, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(
-          'h1',
-          { className: 'banner-heading' },
-          this.props.heading
-        ),
-        _react2.default.createElement(
-          'p',
-          { className: 'banner-info' },
-          this.props.info
-        )
-      );
-    }
-  }]);
-
-  return BannerItem;
 }(_react2.default.Component);
 
 module.exports = Banner;
@@ -36536,7 +36580,7 @@ var AboutUs = function (_React$Component) {
     value: function render() {
       return _react2.default.createElement(
         'section',
-        null,
+        { id: 'about-us' },
         _react2.default.createElement(
           'div',
           { className: 'container' },

@@ -25,30 +25,33 @@
   .arrow-left {
     left: .7em;
     @media (min-width: 640px) {
-      left: 2em;
+      left: 1.5em;
     }
   }
 
   .arrow-right {
     right: .7em;
     @media (min-width: 640px) {
-      right: 2em;
+      right: 1.5em;
     }
   }
 
   .banner-text {
-    height: 50vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
 
     .banner-heading {
+      width: 70%;
       text-align: center;
-      margin-top: 1em;
-      padding: 0.5em;
+      margin: .5em auto;
       font-size: 3em;
       font-family: $font-highlight;
       color: map-get($color-fonts, highlight);
+      @media (min-width: 640px) {
+        font-size: 3.5em;
+      }
     }
 
     .banner-info {

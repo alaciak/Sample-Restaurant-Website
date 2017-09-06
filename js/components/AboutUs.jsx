@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 class AboutUs extends React.Component {
 
   render() {
-    return <section>
+    return <section id='about-us'>
       <div className='container'>
         <div className='row welcome-text'>
           <h2>Welcome to our <span>delishous cuisine</span></h2>

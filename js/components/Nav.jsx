@@ -35,7 +35,7 @@ class Nav extends React.Component {
                 <span></span>
               </div>
               <ul className='dropdown-menu list-show' style={{ display: this.state.menuDisplayStyle }}>
-                <li><a href='#'>About us</a></li>
+                <li><a href='#about-us'>About us</a></li>
                 <li><a href='#'>Book a table</a></li>
                 <li><a href='#'>Gallery</a></li>
                 <li><a href='#'>Contact us</a></li>
@@ -43,7 +43,7 @@ class Nav extends React.Component {
             </MediaQuery>
             <MediaQuery query='(min-width: 640px)'>
               <ul className='dropdown-menu' style={{ display: 'block'}}>
-                <li><a href='#'>About us</a></li>
+                <li><a href='#about-us'>About us</a></li>
                 <li><a href='#'>Book a table</a></li>
                 <li><a href='#'>Gallery</a></li>
                 <li><a href='#'>Contact us</a></li>
