@@ -30,49 +30,85 @@
     text-align: center;
     padding: 0.5em;
     font-size: 1.5em;
+
+    a {
+      text-decoration: none;
+    }
   }
 
-  div {
+  .about-us {
     @extend %box;
     width: 50%;
-    padding: 1.5em;
+    // padding: 1.5em;
     text-align: center;
     @media (max-width: 640px) {
       width: 100%;
     }
   }
 
-  div:first-of-type {
+  .about-us:first-of-type {
     background: map-get($color-background, article-main);
     color: map-get($color-fonts, article);
 
-    h4 {
+    a {
       color: map-get($color-fonts, highlight);
     }
   }
 
-  div:nth-of-type(2) {
+  .about-us:nth-of-type(2) {
     background: map-get($color-background, article-aside);
     color: map-get($color-fonts, menu);
 
-    h4 {
+    a {
       color: map-get($color-fonts, main);
     }
   }
 
-  div:nth-of-type(4) {
+  .about-us:nth-of-type(4) {
     background: map-get($color-background, button);
     color: map-get($color-fonts, menu);
 
-    h4 {
+    a {
       color: map-get($color-fonts, main);
     }
   }
+
+  .read-more {
+    margin: 1em 0;
+    text-align: right;
+    font-size: 0.9em;
+  }
 }
 
-.about-us_photo {
+.about-us_locations {
+  overflow: hidden;
   background: url('../images/ingrediets_photo.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  .about-us_photo {
+    height: 100%;
+    margin-bottom: 1em;;
+    transition: all 1s;
+  }
+  &:hover {
+    .about-us_photo {
+      margin-bottom: -11.5em;
+    }
+  }
+
+  .about-us_locations-info {
+    width: 100%;
+    height: 100%;
+    border-top: 5px solid map-get($color-background, button);
+    background: map-get($color-background, header);
+    opacity: 0.8;
+    a {
+      color: map-get($color-fonts, highlight);
+    }
+    p {
+      color: map-get($color-fonts, menu);
+    }
+  }
 }

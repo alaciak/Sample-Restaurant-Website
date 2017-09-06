@@ -21,7 +21,7 @@ nav .dropdown-menu li {
   list-style-type: none;
 }
 
-.section-about-us div {
+.section-about-us .about-us {
   min-height: 30vh;
   padding: 1rem;
 }
@@ -141,50 +141,86 @@ nav .dropdown-menu li {
   font-size: 1.5em;
 }
 
-.section-about-us div {
+.section-about-us h4 a {
+  text-decoration: none;
+}
+
+.section-about-us .about-us {
   width: 50%;
-  padding: 1.5em;
   text-align: center;
 }
 
 @media (max-width: 640px) {
-  .section-about-us div {
+  .section-about-us .about-us {
     width: 100%;
   }
 }
 
-.section-about-us div:first-of-type {
+.section-about-us .about-us:first-of-type {
   background: #202020;
   color: #d8d8d6;
 }
 
-.section-about-us div:first-of-type h4 {
+.section-about-us .about-us:first-of-type a {
   color: #ffb70f;
 }
 
-.section-about-us div:nth-of-type(2) {
+.section-about-us .about-us:nth-of-type(2) {
   background: #279978;
   color: #fff;
 }
 
-.section-about-us div:nth-of-type(2) h4 {
+.section-about-us .about-us:nth-of-type(2) a {
   color: #000;
 }
 
-.section-about-us div:nth-of-type(4) {
+.section-about-us .about-us:nth-of-type(4) {
   background: #c15e07;
   color: #fff;
 }
 
-.section-about-us div:nth-of-type(4) h4 {
+.section-about-us .about-us:nth-of-type(4) a {
   color: #000;
 }
 
-.about-us_photo {
+.section-about-us .read-more {
+  margin: 1em 0;
+  text-align: right;
+  font-size: 0.9em;
+}
+
+.about-us_locations {
+  overflow: hidden;
   background: url(../img/ingrediets_photo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.about-us_locations .about-us_photo {
+  height: 100%;
+  margin-bottom: 1em;
+  transition: all 1s;
+}
+
+.about-us_locations:hover .about-us_photo {
+  margin-bottom: -11.5em;
+}
+
+.about-us_locations .about-us_locations-info {
+  width: 100%;
+  height: 100%;
+  border-top: 5px solid #c15e07;
+  background: #000;
+  opacity: 0.8;
+}
+
+.about-us_locations .about-us_locations-info a {
+  color: #ffb70f;
+}
+
+.about-us_locations .about-us_locations-info p {
+  color: #fff;
 }
 
 .banner {

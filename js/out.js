@@ -36462,14 +36462,6 @@ var Banner = function (_React$Component2) {
     var _this2 = _possibleConstructorReturn(this, (Banner.__proto__ || Object.getPrototypeOf(Banner)).call(this, props));
 
     _this2.handlePreviousShow = function (event) {
-      if (_this2.state.display === 'inline-block') {
-        _this2.setState({
-          display: 'none'
-        });
-      }
-      _this2.setState({
-        index: _this2.state.index - 1
-      });
       if (_this2.state.index < 0) {
         _this2.setState({
           index: _this2.state.elements.length - 1,
@@ -36477,27 +36469,21 @@ var Banner = function (_React$Component2) {
         });
       } else {
         _this2.setState({
+          index: _this2.state.index - 1,
           display: 'inline-block'
         });
       }
     };
 
     _this2.handleNextShow = function (event) {
-      if (_this2.state.display === 'inline-block') {
-        _this2.setState({
-          display: 'none'
-        });
-      }
-      _this2.setState({
-        index: _this2.state.index + 1
-      });
-      if (_this2.state.index >= _this2.state.elements.length) {
+      if (_this2.state.index >= _this2.state.elements.length - 1) {
         _this2.setState({
           index: 0,
           display: 'inline-block'
         });
       } else {
         _this2.setState({
+          index: _this2.state.index + 1,
           display: 'inline-block'
         });
       }
@@ -36506,7 +36492,7 @@ var Banner = function (_React$Component2) {
     _this2.state = {
       elements: [_react2.default.createElement(BannerItem, { display: _this2.props.display, heading: 'Lorem ipsum dolor', info: 'Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.' }), _react2.default.createElement(BannerItem, { display: _this2.props.display, heading: 'Cras nec augue', info: 'Phasellus eu vulputate purus, a finibus arcu. Nunc eleifend vehicula eleifend.' }), _react2.default.createElement(BannerItem, { display: _this2.props.display, heading: 'Vivamus et vehicula libero', info: 'Maecenas tincidunt finibus rhoncus. In efficitur aliquam risus sed euismod.' })],
       index: 0,
-      display: 'inline-block'
+      display: 'none'
     };
     return _this2;
   }
@@ -36616,45 +36602,106 @@ var AboutUs = function (_React$Component) {
               { className: 'col-6 section-about-us' },
               _react2.default.createElement(
                 'div',
-                null,
+                { className: 'about-us' },
                 _react2.default.createElement(
                   'h4',
                   null,
-                  'About Us'
+                  _react2.default.createElement(
+                    'a',
+                    { href: '#' },
+                    'About Us'
+                  )
                 ),
                 _react2.default.createElement(
                   'p',
                   null,
                   'Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  { className: 'read-more' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: '#' },
+                    'read more...'
+                  )
                 )
               ),
               _react2.default.createElement(
                 'div',
-                null,
+                { className: 'about-us' },
                 _react2.default.createElement(
                   'h4',
                   null,
-                  'Our recipes'
+                  _react2.default.createElement(
+                    'a',
+                    { href: '#' },
+                    'Our recipes'
+                  )
                 ),
                 _react2.default.createElement(
                   'p',
                   null,
                   'Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  { className: 'read-more' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: '#' },
+                    'read more...'
+                  )
                 )
               ),
-              _react2.default.createElement('div', { className: 'about-us_photo' }),
               _react2.default.createElement(
                 'div',
-                null,
+                { className: 'about-us about-us_locations' },
+                _react2.default.createElement('div', { className: 'about-us_photo' }),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'about-us_locations-info' },
+                  _react2.default.createElement(
+                    'h4',
+                    null,
+                    _react2.default.createElement(
+                      'a',
+                      { href: '#' },
+                      'Check our locations'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'p',
+                    null,
+                    'Ea dicit iudico persecuti qui, in debitis disputationi sed, regione omnesque eos in. Eu nec aeque partem deserunt, ad vel nullam numquam.'
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'about-us' },
                 _react2.default.createElement(
                   'h4',
                   null,
-                  'Our services'
+                  _react2.default.createElement(
+                    'a',
+                    { href: '#' },
+                    'Our services'
+                  )
                 ),
                 _react2.default.createElement(
                   'p',
                   null,
                   'Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  { className: 'read-more' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: '#' },
+                    'read more...'
+                  )
                 )
               )
             )

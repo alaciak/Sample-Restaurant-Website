@@ -13,10 +13,10 @@ class AboutUs extends React.Component {
         </div>
         <main>
         <div className='col-6 section-about-us'>
-          <div><h4>About Us</h4><p>Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.</p></div>
-          <div><h4>Our recipes</h4><p>Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.</p></div>
-          <div className='about-us_photo'></div>
-          <div><h4>Our services</h4><p>Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.</p></div>
+          <div className='about-us'><h4><a href='#'>About Us</a></h4><p>Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.</p><p className='read-more'><a href='#'>read more...</a></p></div>
+          <div className='about-us'><h4><a href='#'>Our recipes</a></h4><p>Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.</p><p className='read-more'><a href='#'>read more...</a></p></div>
+          <div className='about-us about-us_locations'><div className='about-us_photo'></div><div className='about-us_locations-info'><h4><a href='#'>Check our locations</a></h4><p>Ea dicit iudico persecuti qui, in debitis disputationi sed, regione omnesque eos in. Eu nec aeque partem deserunt, ad vel nullam numquam.</p></div></div>
+          <div className='about-us'><h4><a href='#'>Our services</a></h4><p>Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.</p><p className='read-more'><a href='#'>read more...</a></p></div>
         </div>
         </main>
       </div>

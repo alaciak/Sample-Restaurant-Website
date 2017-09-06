@@ -20,61 +20,47 @@ class Banner extends React.Component {
         <BannerItem display={ this.props.display } heading='Vivamus et vehicula libero' info='Maecenas tincidunt finibus rhoncus. In efficitur aliquam risus sed euismod.'/>
       ],
       index: 0,
-      display: 'inline-block'
-    }
-  }
-
-handlePreviousShow = event => {
-  if(this.state.display === 'inline-block') {
-    this.setState({
       display: 'none'
-    });
-  }
-  this.setState({
-    index: this.state.index - 1
-  });
-    if (this.state.index < 0) {
-      this.setState({
-        index: this.state.elements.length - 1,
-        display: 'inline-block'
-      });
-    } else {
-      this.setState({
-        display: 'inline-block'
-      });
     }
-}
-
-handleNextShow = event => {
-  if(this.state.display === 'inline-block') {
-    this.setState({
-      display: 'none'
-    });
   }
-  this.setState({
-    index: this.state.index + 1
-  });
-    if (this.state.index >= this.state.elements.length) {
-      this.setState({
-        index: 0,
-        display: 'inline-block'
-      });
-    } else {
-      this.setState({
-        display: 'inline-block'
-      });
+
+  handlePreviousShow = event => {
+      if (this.state.index < 0) {
+        this.setState({
+          index: this.state.elements.length - 1,
+          display: 'inline-block'
+        });
+      } else {
+        this.setState({
+          index: this.state.index - 1,
+          display: 'inline-block'
+        });
+      }
+  }
+
+  handleNextShow = event => {
+      if (this.state.index >= this.state.elements.length - 1) {
+        this.setState({
+          index: 0,
+          display: 'inline-block'
+        });
+      } else {
+        this.setState({
+          index: this.state.index + 1,
+          display: 'inline-block'
+        });
+      }
+  }
+
+    render() {
+      return <div className='container'>
+      <div className='row banner-text'>
+        <div className='arrow-left' onClick={ this.handlePreviousShow }>&lt;</div>
+          { this.state.elements[this.state.index] }
+        <div className='arrow-right' onClick={ this.handleNextShow }>&gt;</div>
+      </div>
+      </div>
     }
-}
-
-  render() {
-    return <div className='container'>
-    <div className='row banner-text'>
-      <div className='arrow-left' onClick={ this.handlePreviousShow }>&lt;</div>
-        { this.state.elements[this.state.index] }
-      <div className='arrow-right' onClick={ this.handleNextShow }>&gt;</div>
-    </div>
-    </div>
   }
-}
 
 module.exports = Banner;
