@@ -167,7 +167,7 @@ nav .dropdown-menu li {
   padding: 0.8em;
 }
 
-@media (max-width: 735px) {
+@media (max-width: 767px) {
   nav .dropdown-menu li {
     font-size: 0.8em;
   }

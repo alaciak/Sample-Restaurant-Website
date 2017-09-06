@@ -34,8 +34,8 @@ nav {
     li {
       @extend %list-item;
       padding: 0.8em;
-      @media (max-width: 735px) {
-        font-size: 0.8em;
+      @media (max-width: 767px) {
+      font-size: 0.8em;
       }
       @media (min-width: 640px) {
         display: inline-block;
