@@ -17,7 +17,11 @@
     @extend %button;
     background: map-get($color-background, button);
     color: map-get($color-fonts, menu);
+    width: 15vw;
     cursor: pointer;
+    @media (max-width: 640px) {
+      width: 30vw;
+    }
   }
 }
 
@@ -37,6 +41,7 @@
     width: 50%;
     text-align: center;
     @media (max-width: 640px) {
+      font-size: 1.25em;
       width: 100%;
     }
   }
@@ -72,10 +77,14 @@
     margin: 1em 0;
     text-align: right;
     font-size: 0.9em;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
-.about-us_locations {
+.about-us_services {
   overflow: hidden;
   background: url('../images/ingrediets_photo.jpg');
   background-repeat: no-repeat;
@@ -84,24 +93,27 @@
 
   .about-us_photo {
     height: 100%;
-    margin-bottom: 1em;;
+    margin-bottom: 1em;
     transition: all 1s;
   }
+
   &:hover {
     .about-us_photo {
       margin-bottom: -11.5em;
     }
   }
 
-  .about-us_locations-info {
+  .about-us_services-info {
     width: 100%;
     height: 100%;
     border-top: 5px solid map-get($color-background, button);
     background: map-get($color-background, header);
     opacity: 0.8;
+
     a {
       color: map-get($color-fonts, highlight);
     }
+
     p {
       color: map-get($color-fonts, menu);
     }

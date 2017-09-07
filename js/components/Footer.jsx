@@ -10,7 +10,7 @@ class Footer extends React.Component {
       <div className='container'>
         <div className='row footer'>
           <div className='col-4 logo'>
-            <p>Your<span>Restaurant</span></p>
+            <p><a href='#'>Your<span>Restaurant</span></a></p>
           </div>
           <div className='col-4'></div>
           <div className='col-4 social-media'></div>

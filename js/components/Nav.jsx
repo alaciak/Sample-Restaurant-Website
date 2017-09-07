@@ -1,5 +1,6 @@
 import React from 'react';
 import MediaQuery from 'react-responsive';
+import AboutUs from './AboutUs.jsx';
 
 class Nav extends React.Component {
   constructor(props) {
@@ -25,7 +26,7 @@ class Nav extends React.Component {
       <div className='container'>
         <div className='row'>
           <div className='col-4 logo'>
-            <p>Your<span>Restaurant</span></p>
+            <p><a href='#'>Your<span>Restaurant</span></a></p>
           </div>
           <div className='col-8'>
             <MediaQuery query='(max-width: 639px)'>
@@ -36,16 +37,16 @@ class Nav extends React.Component {
               </div>
               <ul className='dropdown-menu list-show' style={{ display: this.state.menuDisplayStyle }}>
                 <li><a href='#about-us'>About us</a></li>
-                <li><a href='#'>Book a table</a></li>
-                <li><a href='#'>Gallery</a></li>
-                <li><a href='#'>Contact us</a></li>
+                <li><a href='#menu'>Menu</a></li>
+                <li><a href='#reservation'>Book a table</a></li>
+                <li><a href='#contact-us'>Contact us</a></li>
               </ul>
             </MediaQuery>
             <MediaQuery query='(min-width: 640px)'>
               <ul className='dropdown-menu' style={{ display: 'block'}}>
                 <li><a href='#about-us'>About us</a></li>
-                <li><a href='#'>Book a table</a></li>
-                <li><a href='#'>Gallery</a></li>
+                <li><a href='#menu'>Menu</a></li>
+                <li><a href='#reservation'>Book a table</a></li>
                 <li><a href='#contact-us'>Contact us</a></li>
               </ul>
             </MediaQuery>

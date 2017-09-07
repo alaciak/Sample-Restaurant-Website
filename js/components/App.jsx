@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from './Header.jsx';
 import AboutUs from './AboutUs.jsx';
-import Gallery from './Gallery.jsx';
+import Reservation from './Reservation.jsx';
 import ContactUs from './ContactUs.jsx';
+import ScrollToTopButton from './ScrollToTopButton.jsx';
 import Footer from './Footer.jsx';
 import Main from './Main.jsx';
 import '../../scss/style.scss';
@@ -22,7 +23,9 @@ class App extends React.Component {
     return <div>
       <Header/>
       <AboutUs />
+      <Reservation />
       <ContactUs />
+      <ScrollToTopButton />
       <Footer />
     </div>
   }

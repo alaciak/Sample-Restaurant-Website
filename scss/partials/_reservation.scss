@@ -1,0 +1,134 @@
+.reservation {
+  min-height: 30vh;
+  margin-top: 2em;
+
+  h2 {
+    color: map-get($color-fonts, menu);
+    text-align: center;
+    padding: 0.5em 0;
+    font-size: 1.5em;
+
+    span {
+      color: map-get($color-fonts, highlight);
+    }
+  }
+
+  .reservation-container {
+    background: map-get($color-background, header);
+    min-height: 30vh;
+
+    p {
+      color: map-get($color-fonts, error);
+      text-align: center;
+      padding: 1em;
+    }
+  }
+
+  .reservation-form {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 2em;
+  }
+
+  .reservation-details {
+    padding: 1.5em;
+    width: 20%;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 875px) {
+      width: 100%;
+    }
+  }
+
+  .form-label {
+    @media (max-width: 875px) {
+      width: 30%;
+    }
+  }
+
+  label {
+    color: map-get($color-fonts, menu);
+    font-size: 1.25em;
+    margin-right: 0.7em;
+    width: 100%;
+    @media (max-width: 875px) {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .form-input {
+    @media (max-width: 875px) {
+      width: 70%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .form-input_date {
+    @media (max-width: 875px) {
+      width: 60%;
+    }
+  }
+
+  input {
+    min-height: 4vh;
+    width: 10vw;
+    font-family: $font-main;
+    color: map-get($color-fonts, headings);
+    padding-left: 1em;
+    @media (max-width: 875px) {
+      width: 60%;
+    }
+  }
+
+  .form-button {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 875px) {
+      width: 100%;
+      padding-top: 1em;
+    }
+  }
+
+  button {
+    width: 50%;
+    height: 2em;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: map-get($color-background, button);
+    color: map-get($color-fonts, menu);
+
+    &:hover {
+      cursor: pointer;
+    }
+    @media (max-width: 875px) {
+      width: 100%;
+    }
+  }
+
+  .reservation-made {
+    h2 {
+      text-align: center;
+      color: map-get($color-fonts, menu);
+      padding: 2em;
+
+      span {
+        color: map-get($color-fonts, highlight);
+      }
+    }
+
+    p {
+      text-align: center;
+      color: map-get($color-fonts, menu);
+    }
+  }
+}

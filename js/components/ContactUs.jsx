@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class Reservation extends React.Component {
+class ContactUs extends React.Component {
 
 
 
@@ -32,4 +32,4 @@ class Reservation extends React.Component {
   }
 }
 
-module.exports = Reservation;
+module.exports = ContactUs;

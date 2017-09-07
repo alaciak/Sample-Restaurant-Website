@@ -1,6 +1,6 @@
 %clearfix {
-  &::before,
-  &::after {
+  &::after,
+  &::before {
     clear: both;
     content: '';
     display: block;
@@ -17,7 +17,6 @@
 }
 
 %button {
-  width: 20%;
   min-height: 2em;
   font-size: 1em;
   border-radius: 5px;

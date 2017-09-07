@@ -68,5 +68,7 @@
       color: map-get($color-fonts, menu);
       font-size: 1.5em;
     }
+  } a {
+    color: map-get($color-fonts, menu);
   }
 }

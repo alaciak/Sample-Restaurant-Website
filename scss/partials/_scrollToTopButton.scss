@@ -1,0 +1,19 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  height: 5vh;
+  width: 7vw;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: map-get($color-background, button);
+  color: map-get($color-fonts, menu);
+  opacity: 0.8;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

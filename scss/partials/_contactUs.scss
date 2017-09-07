@@ -2,29 +2,37 @@
   min-height: 30vh;
   padding-top: 3.5em;
   background: map-get($color-background, main);
+
   h2 {
     font-size: 2em;
     margin-bottom: 1em;
     text-align: center;
+
     span {
       color: map-get($color-fonts, highlight);
     }
   }
+
   .contact-info {
     padding-left: 1.5em;
     border-left: 5px solid map-get($color-fonts, highlight);
     overflow: hidden;
+
     p {
       font-size: 1.25em;
       margin-bottom: 1em;
     }
-    span, a {
+
+    a,
+    span {
       color: map-get($color-fonts, headings);
     }
+
     a:hover {
       text-decoration: underline;
     }
   }
+
   .contact-icon {
     width: 100%;
     height: 100px;
