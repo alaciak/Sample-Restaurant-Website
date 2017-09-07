@@ -1133,18 +1133,18 @@ footer a {
 
 .scroll-to-top {
   position: fixed;
-  bottom: 1em;
-  right: 1em;
-  height: 5vh;
-  width: 7vw;
+  bottom: .5em;
+  right: .5em;
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
   border: none;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #c15e07;
-  color: #fff;
-  opacity: 0.8;
+  background: #000;
+  color: #ffb70f;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  opacity: .9;
 }
 
 .scroll-to-top:hover {

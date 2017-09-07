@@ -1,17 +1,17 @@
 .scroll-to-top {
   position: fixed;
-  bottom: 1em;
-  right: 1em;
-  height: 5vh;
-  width: 7vw;
+  bottom: .5em;
+  right: .5em;
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
   border: none;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: map-get($color-background, button);
-  color: map-get($color-fonts, menu);
-  opacity: 0.8;
+  background: map-get($color-background, header);
+  color: map-get($color-fonts, highlight);
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  opacity: .9;
 
   &:hover {
     cursor: pointer;

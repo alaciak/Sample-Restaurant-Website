@@ -16,7 +16,7 @@ class ScrollToTopButton extends React.Component {
   }
 
   render() {
-    return <button className='scroll-to-top' onClick={ event => this.handleOnClickScrollUp(event, 1000) }>Go up</button>
+    return <div className='scroll-to-top' onClick={ event => this.handleOnClickScrollUp(event, 1000) }>^</div>
   }
 }
 
