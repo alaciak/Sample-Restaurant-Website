@@ -15,9 +15,13 @@ class Nav extends React.Component {
 
   onClickHandler = event => {
     if (this.state.menuDisplayStyle === 'block') {
-      this.setState({menuDisplayStyle: 'none'});
+      this.setState({
+        menuDisplayStyle: 'none'
+      });
     } else {
-      this.setState({menuDisplayStyle: 'block'});
+      this.setState({
+        menuDisplayStyle: 'block'
+      });
     }
   }
 

@@ -1,5 +1,4 @@
 .reservation {
-  min-height: 30vh;
   margin-top: 2em;
 
   h2 {
@@ -7,6 +6,7 @@
     text-align: center;
     padding: 0.5em 0;
     font-size: 1.5em;
+    word-spacing: .5em;
 
     span {
       color: map-get($color-fonts, highlight);
@@ -78,7 +78,7 @@
     width: 10vw;
     font-family: $font-main;
     color: map-get($color-fonts, headings);
-    padding-left: 1em;
+    padding-left: .5em;
     @media (max-width: 875px) {
       width: 60%;
     }

@@ -922,7 +922,6 @@ nav .dropdown-menu a {
 }
 
 .reservation {
-  min-height: 30vh;
   margin-top: 2em;
 }
 
@@ -931,6 +930,7 @@ nav .dropdown-menu a {
   text-align: center;
   padding: 0.5em 0;
   font-size: 1.5em;
+  word-spacing: .5em;
 }
 
 .reservation h2 span {
@@ -1008,7 +1008,7 @@ nav .dropdown-menu a {
   width: 10vw;
   font-family: "Lato", sans-serif;
   color: #605a52;
-  padding-left: 1em;
+  padding-left: .5em;
 }
 
 @media (max-width: 875px) {
@@ -1070,8 +1070,8 @@ nav .dropdown-menu a {
 }
 
 .contact-us {
-  min-height: 30vh;
-  padding-top: 3.5em;
+  height: 40vh;
+  padding-top: 2.5em;
   background: #fff;
 }
 
@@ -1086,9 +1086,9 @@ nav .dropdown-menu a {
 }
 
 .contact-us .contact-info {
+  height: 5em;
   padding-left: 1.5em;
   border-left: 5px solid #ffb70f;
-  overflow: hidden;
 }
 
 .contact-us .contact-info p {

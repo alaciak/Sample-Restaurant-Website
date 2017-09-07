@@ -1,6 +1,6 @@
 .contact-us {
-  min-height: 30vh;
-  padding-top: 3.5em;
+  height: 40vh;
+  padding-top: 2.5em;
   background: map-get($color-background, main);
 
   h2 {
@@ -14,9 +14,9 @@
   }
 
   .contact-info {
+    height: 5em;;
     padding-left: 1.5em;
     border-left: 5px solid map-get($color-fonts, highlight);
-    overflow: hidden;
 
     p {
       font-size: 1.25em;

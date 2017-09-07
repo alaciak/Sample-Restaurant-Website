@@ -20889,9 +20889,13 @@ var Nav = function (_React$Component) {
 
     _this.onClickHandler = function (event) {
       if (_this.state.menuDisplayStyle === 'block') {
-        _this.setState({ menuDisplayStyle: 'none' });
+        _this.setState({
+          menuDisplayStyle: 'none'
+        });
       } else {
-        _this.setState({ menuDisplayStyle: 'block' });
+        _this.setState({
+          menuDisplayStyle: 'block'
+        });
       }
     };
 
