@@ -13,7 +13,7 @@ class Nav extends React.Component {
     }
   }
 
-  showMenuOnClickHandler = event => {
+  showmenuNavigateOnClickHandler = event => {
     if (this.state.menuDisplayStyle === 'block') {
       this.setState({
         menuDisplayStyle: 'none'
@@ -24,7 +24,7 @@ class Nav extends React.Component {
       });
     }
   }
-menuOnClickHandler = event => {
+menuNavigateOnClickHandler = event => {
   this.setState({
     menuDisplayStyle: 'none'
   });
@@ -39,24 +39,24 @@ menuOnClickHandler = event => {
           </div>
           <div className='col-8'>
             <MediaQuery query='(max-width: 639px)'>
-              <div className="menu" style={{ display: 'block' }} onClick={ this.showMenuOnClickHandler }>
+              <div className="menu" style={{ display: 'block' }} onClick={ this.showmenuNavigateOnClickHandler }>
                 <span></span>
                 <span></span>
                 <span></span>
               </div>
               <ul className='dropdown-menu list-show' style={{ display: this.state.menuDisplayStyle }}>
-                <li><a href='#about-us' onClick={ this.menuOnClickHandler }>About us</a></li>
-                <li><a href='#menu' onClick={ this.menuOnClickHandler } >Menu</a></li>
-                <li><a href='#reservation' onClick={ this.menuOnClickHandler } >Book a table</a></li>
-                <li><a href='#contact-us' onClick={ this.menuOnClickHandler } >Contact us</a></li>
+                <li><a href='#about-us' onClick={ this.menuNavigateOnClickHandler }>About us</a></li>
+                <li><a href='#menu' onClick={ this.menuNavigateOnClickHandler } >Menu</a></li>
+                <li><a href='#reservation' onClick={ this.menuNavigateOnClickHandler } >Book a table</a></li>
+                <li><a href='#contact-us' onClick={ this.menuNavigateOnClickHandler } >Contact us</a></li>
               </ul>
             </MediaQuery>
             <MediaQuery query='(min-width: 640px)'>
               <ul className='dropdown-menu' style={{ display: 'block'}}>
-                <li><a href='#about-us' onClick={ this.menuOnClickHandler }>About us</a></li>
-                <li><a href='#menu' onClick={ this.menuOnClickHandler } >Menu</a></li>
-                <li><a href='#reservation' onClick={ this.menuOnClickHandler } >Book a table</a></li>
-                <li><a href='#contact-us' onClick={ this.menuOnClickHandler } >Contact us</a></li>
+                <li><a href='#about-us' onClick={ this.menuNavigateOnClickHandler }>About us</a></li>
+                <li><a href='#menu' onClick={ this.menuNavigateOnClickHandler } >Menu</a></li>
+                <li><a href='#reservation' onClick={ this.menuNavigateOnClickHandler } >Book a table</a></li>
+                <li><a href='#contact-us' onClick={ this.menuNavigateOnClickHandler } >Contact us</a></li>
               </ul>
             </MediaQuery>
           </div>

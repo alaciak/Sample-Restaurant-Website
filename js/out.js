@@ -20887,7 +20887,7 @@ var Nav = function (_React$Component) {
 
     var _this = _possibleConstructorReturn(this, (Nav.__proto__ || Object.getPrototypeOf(Nav)).call(this, props));
 
-    _this.showMenuOnClickHandler = function (event) {
+    _this.showmenuNavigateOnClickHandler = function (event) {
       if (_this.state.menuDisplayStyle === 'block') {
         _this.setState({
           menuDisplayStyle: 'none'
@@ -20899,7 +20899,7 @@ var Nav = function (_React$Component) {
       }
     };
 
-    _this.menuOnClickHandler = function (event) {
+    _this.menuNavigateOnClickHandler = function (event) {
       _this.setState({
         menuDisplayStyle: 'none'
       });
@@ -20952,7 +20952,7 @@ var Nav = function (_React$Component) {
                 { query: '(max-width: 639px)' },
                 _react2.default.createElement(
                   'div',
-                  { className: 'menu', style: { display: 'block' }, onClick: this.showMenuOnClickHandler },
+                  { className: 'menu', style: { display: 'block' }, onClick: this.showmenuNavigateOnClickHandler },
                   _react2.default.createElement('span', null),
                   _react2.default.createElement('span', null),
                   _react2.default.createElement('span', null)
@@ -20965,7 +20965,7 @@ var Nav = function (_React$Component) {
                     null,
                     _react2.default.createElement(
                       'a',
-                      { href: '#about-us', onClick: this.menuOnClickHandler },
+                      { href: '#about-us', onClick: this.menuNavigateOnClickHandler },
                       'About us'
                     )
                   ),
@@ -20974,7 +20974,7 @@ var Nav = function (_React$Component) {
                     null,
                     _react2.default.createElement(
                       'a',
-                      { href: '#menu', onClick: this.menuOnClickHandler },
+                      { href: '#menu', onClick: this.menuNavigateOnClickHandler },
                       'Menu'
                     )
                   ),
@@ -20983,7 +20983,7 @@ var Nav = function (_React$Component) {
                     null,
                     _react2.default.createElement(
                       'a',
-                      { href: '#reservation', onClick: this.menuOnClickHandler },
+                      { href: '#reservation', onClick: this.menuNavigateOnClickHandler },
                       'Book a table'
                     )
                   ),
@@ -20992,7 +20992,7 @@ var Nav = function (_React$Component) {
                     null,
                     _react2.default.createElement(
                       'a',
-                      { href: '#contact-us', onClick: this.menuOnClickHandler },
+                      { href: '#contact-us', onClick: this.menuNavigateOnClickHandler },
                       'Contact us'
                     )
                   )
@@ -21009,7 +21009,7 @@ var Nav = function (_React$Component) {
                     null,
                     _react2.default.createElement(
                       'a',
-                      { href: '#about-us', onClick: this.menuOnClickHandler },
+                      { href: '#about-us', onClick: this.menuNavigateOnClickHandler },
                       'About us'
                     )
                   ),
@@ -21018,7 +21018,7 @@ var Nav = function (_React$Component) {
                     null,
                     _react2.default.createElement(
                       'a',
-                      { href: '#menu', onClick: this.menuOnClickHandler },
+                      { href: '#menu', onClick: this.menuNavigateOnClickHandler },
                       'Menu'
                     )
                   ),
@@ -21027,7 +21027,7 @@ var Nav = function (_React$Component) {
                     null,
                     _react2.default.createElement(
                       'a',
-                      { href: '#reservation', onClick: this.menuOnClickHandler },
+                      { href: '#reservation', onClick: this.menuNavigateOnClickHandler },
                       'Book a table'
                     )
                   ),
@@ -21036,7 +21036,7 @@ var Nav = function (_React$Component) {
                     null,
                     _react2.default.createElement(
                       'a',
-                      { href: '#contact-us', onClick: this.menuOnClickHandler },
+                      { href: '#contact-us', onClick: this.menuNavigateOnClickHandler },
                       'Contact us'
                     )
                   )
