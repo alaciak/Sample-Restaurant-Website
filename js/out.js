@@ -21177,18 +21177,18 @@ var AboutUs = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'div',
-                { className: 'about-us about-us_services' },
+                { className: 'about-us about-us_recipes' },
                 _react2.default.createElement('div', { className: 'about-us_photo' }),
                 _react2.default.createElement(
                   'div',
-                  { className: 'about-us_services-info' },
+                  { className: 'about-us_recipes-info' },
                   _react2.default.createElement(
                     'h4',
                     null,
                     _react2.default.createElement(
                       'a',
                       { href: '#' },
-                      'Our locations'
+                      'Our Recipes'
                     )
                   ),
                   _react2.default.createElement(
@@ -21207,7 +21207,7 @@ var AboutUs = function (_React$Component) {
                   _react2.default.createElement(
                     'a',
                     { href: '#' },
-                    'Our Recipes'
+                    'Our Locations'
                   )
                 ),
                 _react2.default.createElement(

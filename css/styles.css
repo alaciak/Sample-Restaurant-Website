@@ -529,13 +529,9 @@ nav .dropdown-menu li {
   list-style-type: none;
 }
 
-.section-about-us .about-us {
-  min-height: 30vh;
-  padding: 1rem;
-}
-
 .welcome-text .button-read-more {
   min-height: 2em;
+  padding: .5em;
   font-size: 1em;
   border-radius: 5px;
   margin: 1.5em auto;
@@ -763,25 +759,31 @@ nav .dropdown-menu a {
 }
 
 .banner .banner-text {
-  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  padding: 3em 0;
+}
+
+@media (min-width: 640px) {
+  .banner .banner-text {
+    padding: 4em 0;
+  }
 }
 
 .banner .banner-text .banner-heading {
   width: 70%;
   text-align: center;
   margin: .5em auto;
-  font-size: 3em;
+  font-size: 2em;
   font-family: "Satisfy", cursive;
   color: #ffb70f;
 }
 
 @media (min-width: 640px) {
   .banner .banner-text .banner-heading {
-    font-size: 3.5em;
+    font-size: 4em;
   }
 }
 
@@ -791,7 +793,13 @@ nav .dropdown-menu a {
   text-align: center;
   padding: 0.5em;
   color: #fff;
-  font-size: 1.5em;
+  font-size: 1em;
+}
+
+@media (min-width: 640px) {
+  .banner .banner-text .banner-info {
+    font-size: 1.5em;
+  }
 }
 
 .banner a {
@@ -817,19 +825,14 @@ nav .dropdown-menu a {
 .welcome-text .button-read-more {
   background: #c15e07;
   color: #fff;
-  width: 15vw;
+  width: 20vw;
   cursor: pointer;
-}
-
-@media (max-width: 640px) {
-  .welcome-text .button-read-more {
-    width: 30vw;
-  }
 }
 
 .section-about-us {
   display: flex;
   flex-wrap: wrap;
+  min-height: 75vh;
 }
 
 .section-about-us h4 {
@@ -839,15 +842,21 @@ nav .dropdown-menu a {
   font-size: 1.5em;
 }
 
+.section-about-us h4:hover {
+  text-decoration: underline;
+}
+
 .section-about-us .about-us {
   width: 50%;
   text-align: center;
+  padding: 2em;
 }
 
 @media (max-width: 640px) {
   .section-about-us .about-us {
     font-size: 1.25em;
     width: 100%;
+    min-height: 40vh;
   }
 }
 
@@ -889,7 +898,7 @@ nav .dropdown-menu a {
   cursor: pointer;
 }
 
-.about-us_services {
+.about-us_recipes {
   overflow: hidden;
   background: url(../img/ingrediets_photo.jpg);
   background-repeat: no-repeat;
@@ -897,23 +906,23 @@ nav .dropdown-menu a {
   background-position: center;
 }
 
-.about-us_services .about-us_photo {
+.about-us_recipes .about-us_photo {
   height: 100%;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   transition: all 1s;
 }
 
-.about-us_services:hover .about-us_photo {
+.about-us_recipes:hover .about-us_photo {
   margin-bottom: -11.5em;
 }
 
 @media (max-width: 640px) {
-  .about-us_services:hover .about-us_photo {
+  .about-us_recipes:hover .about-us_photo {
     margin-bottom: -9.5em;
   }
 }
 
-.about-us_services .about-us_services-info {
+.about-us_recipes .about-us_recipes-info {
   width: 100%;
   height: 100%;
   border-top: 5px solid #c15e07;
@@ -921,11 +930,11 @@ nav .dropdown-menu a {
   opacity: 0.8;
 }
 
-.about-us_services .about-us_services-info a {
+.about-us_recipes .about-us_recipes-info a {
   color: #ffb70f;
 }
 
-.about-us_services .about-us_services-info p {
+.about-us_recipes .about-us_recipes-info p {
   color: #fff;
 }
 
@@ -1078,8 +1087,7 @@ nav .dropdown-menu a {
 }
 
 .contact-us {
-  height: 40vh;
-  padding-top: 2.5em;
+  padding: 2.5em 0;
   background: #fff;
 }
 
@@ -1097,6 +1105,9 @@ nav .dropdown-menu a {
   height: 5em;
   padding-left: 1em;
   border-left: 5px solid #ffb70f;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .contact-us .contact-info p {
@@ -1107,6 +1118,7 @@ nav .dropdown-menu a {
 .contact-us .contact-info a,
 .contact-us .contact-info span {
   color: #605a52;
+  overflow: hidden;
 }
 
 .contact-us .contact-info a:hover {

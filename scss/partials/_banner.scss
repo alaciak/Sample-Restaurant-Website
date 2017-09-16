@@ -43,21 +43,24 @@
   }
 
   .banner-text {
-    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    padding: 3em 0;
+    @media (min-width: 640px) {
+      padding: 4em 0;
+    }
 
     .banner-heading {
       width: 70%;
       text-align: center;
       margin: .5em auto;
-      font-size: 3em;
+      font-size: 2em;
       font-family: $font-highlight;
       color: map-get($color-fonts, highlight);
       @media (min-width: 640px) {
-        font-size: 3.5em;
+        font-size: 4em;
       }
     }
 
@@ -67,7 +70,10 @@
       text-align: center;
       padding: 0.5em;
       color: map-get($color-fonts, menu);
-      font-size: 1.5em;
+      font-size: 1em;
+      @media (min-width: 640px) {
+        font-size: 1.5em;
+      }
     }
   } a {
     color: map-get($color-fonts, menu);
