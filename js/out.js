@@ -21143,7 +21143,7 @@ var AboutUs = function (_React$Component) {
                   { className: 'read-more' },
                   _react2.default.createElement(
                     'a',
-                    { href: '#' },
+                    null,
                     'read more...'
                   )
                 )
@@ -21170,7 +21170,7 @@ var AboutUs = function (_React$Component) {
                   { className: 'read-more' },
                   _react2.default.createElement(
                     'a',
-                    { href: '#' },
+                    null,
                     'read more...'
                   )
                 )
@@ -21220,7 +21220,7 @@ var AboutUs = function (_React$Component) {
                   { className: 'read-more' },
                   _react2.default.createElement(
                     'a',
-                    { href: '#' },
+                    null,
                     'read more...'
                   )
                 )

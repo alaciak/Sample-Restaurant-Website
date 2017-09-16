@@ -763,10 +763,11 @@ nav .dropdown-menu a {
 }
 
 .banner .banner-text {
-  height: 60vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .banner .banner-text .banner-heading {
@@ -885,6 +886,7 @@ nav .dropdown-menu a {
 
 .section-about-us .read-more:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .about-us_services {
@@ -903,6 +905,12 @@ nav .dropdown-menu a {
 
 .about-us_services:hover .about-us_photo {
   margin-bottom: -11.5em;
+}
+
+@media (max-width: 640px) {
+  .about-us_services:hover .about-us_photo {
+    margin-bottom: -9.5em;
+  }
 }
 
 .about-us_services .about-us_services-info {
@@ -1087,7 +1095,7 @@ nav .dropdown-menu a {
 
 .contact-us .contact-info {
   height: 5em;
-  padding-left: 1.5em;
+  padding-left: 1em;
   border-left: 5px solid #ffb70f;
 }
 
@@ -1111,7 +1119,7 @@ nav .dropdown-menu a {
 }
 
 footer {
-  min-height: 10vh;
+  height: 10vh;
   background: #000;
   color: #fff;
   display: flex;

@@ -43,10 +43,11 @@
   }
 
   .banner-text {
-    height: 60vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 
     .banner-heading {
       width: 70%;
