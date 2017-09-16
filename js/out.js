@@ -20887,7 +20887,7 @@ var Nav = function (_React$Component) {
 
     var _this = _possibleConstructorReturn(this, (Nav.__proto__ || Object.getPrototypeOf(Nav)).call(this, props));
 
-    _this.onClickHandler = function (event) {
+    _this.showMenuOnClickHandler = function (event) {
       if (_this.state.menuDisplayStyle === 'block') {
         _this.setState({
           menuDisplayStyle: 'none'
@@ -20897,6 +20897,12 @@ var Nav = function (_React$Component) {
           menuDisplayStyle: 'block'
         });
       }
+    };
+
+    _this.menuOnClickHandler = function (event) {
+      _this.setState({
+        menuDisplayStyle: 'none'
+      });
     };
 
     _this.state = {
@@ -20946,7 +20952,7 @@ var Nav = function (_React$Component) {
                 { query: '(max-width: 639px)' },
                 _react2.default.createElement(
                   'div',
-                  { className: 'menu', style: { display: 'block' }, onClick: this.onClickHandler },
+                  { className: 'menu', style: { display: 'block' }, onClick: this.showMenuOnClickHandler },
                   _react2.default.createElement('span', null),
                   _react2.default.createElement('span', null),
                   _react2.default.createElement('span', null)
@@ -20959,7 +20965,7 @@ var Nav = function (_React$Component) {
                     null,
                     _react2.default.createElement(
                       'a',
-                      { href: '#about-us' },
+                      { href: '#about-us', onClick: this.menuOnClickHandler },
                       'About us'
                     )
                   ),
@@ -20968,7 +20974,7 @@ var Nav = function (_React$Component) {
                     null,
                     _react2.default.createElement(
                       'a',
-                      { href: '#menu' },
+                      { href: '#menu', onClick: this.menuOnClickHandler },
                       'Menu'
                     )
                   ),
@@ -20977,7 +20983,7 @@ var Nav = function (_React$Component) {
                     null,
                     _react2.default.createElement(
                       'a',
-                      { href: '#reservation' },
+                      { href: '#reservation', onClick: this.menuOnClickHandler },
                       'Book a table'
                     )
                   ),
@@ -20986,7 +20992,7 @@ var Nav = function (_React$Component) {
                     null,
                     _react2.default.createElement(
                       'a',
-                      { href: '#contact-us' },
+                      { href: '#contact-us', onClick: this.menuOnClickHandler },
                       'Contact us'
                     )
                   )
@@ -21003,7 +21009,7 @@ var Nav = function (_React$Component) {
                     null,
                     _react2.default.createElement(
                       'a',
-                      { href: '#about-us' },
+                      { href: '#about-us', onClick: this.menuOnClickHandler },
                       'About us'
                     )
                   ),
@@ -21012,7 +21018,7 @@ var Nav = function (_React$Component) {
                     null,
                     _react2.default.createElement(
                       'a',
-                      { href: '#menu' },
+                      { href: '#menu', onClick: this.menuOnClickHandler },
                       'Menu'
                     )
                   ),
@@ -21021,7 +21027,7 @@ var Nav = function (_React$Component) {
                     null,
                     _react2.default.createElement(
                       'a',
-                      { href: '#reservation' },
+                      { href: '#reservation', onClick: this.menuOnClickHandler },
                       'Book a table'
                     )
                   ),
@@ -21030,7 +21036,7 @@ var Nav = function (_React$Component) {
                     null,
                     _react2.default.createElement(
                       'a',
-                      { href: '#contact-us' },
+                      { href: '#contact-us', onClick: this.menuOnClickHandler },
                       'Contact us'
                     )
                   )

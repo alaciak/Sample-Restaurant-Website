@@ -33,7 +33,7 @@ nav {
 
     li {
       @extend %list-item;
-      padding: 0.8em;
+      padding: .9em;
       @media (max-width: 767px) {
       font-size: 0.8em;
       }

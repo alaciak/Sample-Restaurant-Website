@@ -667,7 +667,7 @@ nav .dropdown-menu {
 }
 
 nav .dropdown-menu li {
-  padding: 0.8em;
+  padding: .9em;
 }
 
 @media (max-width: 767px) {
