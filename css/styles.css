@@ -787,6 +787,12 @@ nav .dropdown-menu a {
   }
 }
 
+@media (max-width: 640px) and (orientation: landscape) {
+  .banner .banner-text .banner-heading {
+    font-size: 2.5em;
+  }
+}
+
 .banner .banner-text .banner-info {
   width: 50%;
   margin: 0 auto;
@@ -860,6 +866,12 @@ nav .dropdown-menu a {
   }
 }
 
+@media (max-width: 640px) and (orientation: landscape) {
+  .section-about-us .about-us {
+    min-height: 70vh;
+  }
+}
+
 .section-about-us .about-us:first-of-type {
   background: #202020;
   color: #d8d8d6;
@@ -919,6 +931,12 @@ nav .dropdown-menu a {
 @media (max-width: 640px) {
   .about-us_recipes:hover .about-us_photo {
     margin-bottom: -11.5em;
+  }
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+  .about-us_recipes:hover .about-us_photo {
+    margin-bottom: -8em;
   }
 }
 

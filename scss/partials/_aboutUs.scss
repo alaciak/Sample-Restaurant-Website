@@ -47,6 +47,9 @@
       width: 100%;
       min-height: 40vh;
     }
+    @media (max-width: 640px) and (orientation: landscape) {
+      min-height: 70vh;
+    }
   }
 
   .about-us:first-of-type {
@@ -106,6 +109,9 @@
       margin-bottom: -12.5em;
       @media (max-width: 640px) {
         margin-bottom: -11.5em;
+      }
+      @media (max-width: 640px) and (orientation: landscape) {
+        margin-bottom: -8em;
       }
     }
   }
