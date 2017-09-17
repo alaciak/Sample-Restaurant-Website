@@ -52255,7 +52255,7 @@ var Banner = function (_React$Component2) {
     };
 
     _this2.state = {
-      elements: [_react2.default.createElement(BannerItem, { display: _this2.props.display, heading: 'Lorem ipsum dolor', info: 'Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.' }), _react2.default.createElement(BannerItem, { display: _this2.props.display, heading: 'Cras nec augue', info: 'Phasellus eu vulputate purus, a finibus arcu. Nunc eleifend vehicula eleifend.' }), _react2.default.createElement(BannerItem, { display: _this2.props.display, heading: 'Vivamus et vehicula libero', info: 'Maecenas tincidunt finibus rhoncus. In efficitur aliquam risus sed euismod.' })],
+      elements: [_react2.default.createElement(BannerItem, { display: _this2.props.display, heading: 'Lorem ipsum dolor', info: 'Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.' }), _react2.default.createElement(BannerItem, { display: _this2.props.display, heading: 'Cras nec augue', info: 'Phasellus eu vulputate purus, a finibus arcu. Nunc eleifend vehicula eleifend.' }), _react2.default.createElement(BannerItem, { display: _this2.props.display, heading: 'Vivamus et vehicula', info: 'Maecenas tincidunt finibus rhoncus. In efficitur aliquam risus sed euismod.' })],
       index: 0,
       display: 'none'
     };

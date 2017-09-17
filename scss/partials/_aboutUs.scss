@@ -4,13 +4,17 @@
   color: map-get($color-fonts, headings);
 
   h2 {
-    font-size: 2em;
+    font-size: 3.5em;
     font-family: $font-highlight;
     margin-bottom: 1em;
 
     span {
       color: map-get($color-fonts, highlight);
     }
+  }
+
+  p {
+    font-size: 1.25em;
   }
 
   .button-read-more {
@@ -25,7 +29,7 @@
 .section-about-us {
   display: flex;
   flex-wrap: wrap;
-  min-height: 75vh;
+  min-height: 60vh;
 
   h4 {
     text-transform: uppercase;
@@ -39,10 +43,11 @@
   }
 
   .about-us {
+    font-size: 1.25em;
     width: 50%;
     text-align: center;
     padding: 2em;
-    @media (max-width: 640px) {
+    @media (max-width: 768px) {
       font-size: 1.25em;
       width: 100%;
       min-height: 40vh;
@@ -82,7 +87,7 @@
   .read-more {
     margin: 1em 0;
     text-align: right;
-    font-size: 0.9em;
+    font-size: 1em;
 
     &:hover {
       text-decoration: underline;
@@ -106,7 +111,7 @@
 
   &:hover {
     .about-us_photo {
-      margin-bottom: -12.5em;
+      margin-bottom: -10.5em;
       @media (max-width: 640px) {
         margin-bottom: -11.5em;
       }

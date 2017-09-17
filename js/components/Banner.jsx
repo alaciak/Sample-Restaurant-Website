@@ -17,7 +17,7 @@ class Banner extends React.Component {
       elements: [
         <BannerItem display={ this.props.display } heading='Lorem ipsum dolor' info='Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.'/>,
         <BannerItem display={ this.props.display } heading='Cras nec augue' info='Phasellus eu vulputate purus, a finibus arcu. Nunc eleifend vehicula eleifend.'/>,
-        <BannerItem display={ this.props.display } heading='Vivamus et vehicula libero' info='Maecenas tincidunt finibus rhoncus. In efficitur aliquam risus sed euismod.'/>
+        <BannerItem display={ this.props.display } heading='Vivamus et vehicula' info='Maecenas tincidunt finibus rhoncus. In efficitur aliquam risus sed euismod.'/>
       ],
       index: 0,
       display: 'none'

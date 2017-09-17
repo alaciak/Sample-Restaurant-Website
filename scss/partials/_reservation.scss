@@ -4,7 +4,7 @@
   h2 {
     color: map-get($color-fonts, menu);
     text-align: center;
-    padding: 0.5em 0;
+    padding: 1.5em 0;
     font-size: 1.5em;
     word-spacing: .5em;
 
@@ -51,7 +51,7 @@
   label {
     color: map-get($color-fonts, menu);
     font-size: 1.25em;
-    margin-right: 0.7em;
+    margin-right: .8em;
     width: 100%;
     @media (max-width: 875px) {
       display: flex;

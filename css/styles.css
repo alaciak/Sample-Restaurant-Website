@@ -542,7 +542,7 @@ nav .dropdown-menu li {
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1400px;
   width: 100%;
 }
 
@@ -804,7 +804,7 @@ nav .dropdown-menu a {
 
 @media (min-width: 640px) {
   .banner .banner-text .banner-info {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 }
 
@@ -819,13 +819,17 @@ nav .dropdown-menu a {
 }
 
 .welcome-text h2 {
-  font-size: 2em;
+  font-size: 3.5em;
   font-family: "Satisfy", cursive;
   margin-bottom: 1em;
 }
 
 .welcome-text h2 span {
   color: #ffb70f;
+}
+
+.welcome-text p {
+  font-size: 1.25em;
 }
 
 .welcome-text .button-read-more {
@@ -838,7 +842,7 @@ nav .dropdown-menu a {
 .section-about-us {
   display: flex;
   flex-wrap: wrap;
-  min-height: 75vh;
+  min-height: 60vh;
 }
 
 .section-about-us h4 {
@@ -853,12 +857,13 @@ nav .dropdown-menu a {
 }
 
 .section-about-us .about-us {
+  font-size: 1.25em;
   width: 50%;
   text-align: center;
   padding: 2em;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .section-about-us .about-us {
     font-size: 1.25em;
     width: 100%;
@@ -902,7 +907,7 @@ nav .dropdown-menu a {
 .section-about-us .read-more {
   margin: 1em 0;
   text-align: right;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .section-about-us .read-more:hover {
@@ -925,7 +930,7 @@ nav .dropdown-menu a {
 }
 
 .about-us_recipes:hover .about-us_photo {
-  margin-bottom: -12.5em;
+  margin-bottom: -10.5em;
 }
 
 @media (max-width: 640px) {
@@ -963,7 +968,7 @@ nav .dropdown-menu a {
 .reservation h2 {
   color: #fff;
   text-align: center;
-  padding: 0.5em 0;
+  padding: 1.5em 0;
   font-size: 1.5em;
   word-spacing: .5em;
 }
@@ -1013,7 +1018,7 @@ nav .dropdown-menu a {
 .reservation label {
   color: #fff;
   font-size: 1.25em;
-  margin-right: 0.7em;
+  margin-right: .8em;
   width: 100%;
 }
 
@@ -1172,7 +1177,7 @@ footer a {
 .scroll-to-top {
   position: fixed;
   bottom: .5em;
-  right: .5em;
+  right: 1em;
   height: 1em;
   width: 1em;
   border-radius: 50%;
