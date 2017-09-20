@@ -1097,7 +1097,7 @@ nav .dropdown-menu a {
 .reservation .reservation-made h2 {
   text-align: center;
   color: #fff;
-  padding: 2em;
+  padding: 1.5em;
 }
 
 .reservation .reservation-made h2 span {
@@ -1105,6 +1105,7 @@ nav .dropdown-menu a {
 }
 
 .reservation .reservation-made p {
+  font-size: 1.5em;
   text-align: center;
   color: #fff;
 }

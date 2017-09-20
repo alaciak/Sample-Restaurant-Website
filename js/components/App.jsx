@@ -8,14 +8,6 @@ import ScrollToTopButton from './ScrollToTopButton.jsx';
 import Footer from './Footer.jsx';
 import Main from './Main.jsx';
 import '../../scss/style.scss';
-import {
-  Router,
-  Route,
-  Link,
-  IndexLink,
-  IndexRoute,
-  hashHistory
-} from 'react-router';
 
 class App extends React.Component {
 

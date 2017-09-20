@@ -119,7 +119,7 @@
     h2 {
       text-align: center;
       color: map-get($color-fonts, menu);
-      padding: 2em;
+      padding: 1.5em;
 
       span {
         color: map-get($color-fonts, highlight);
@@ -127,6 +127,7 @@
     }
 
     p {
+      font-size: 1.5em;
       text-align: center;
       color: map-get($color-fonts, menu);
     }
