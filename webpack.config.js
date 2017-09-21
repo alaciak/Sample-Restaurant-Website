@@ -1,4 +1,3 @@
-//Konfiguracja Webpack
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 require("babel-polyfill");
 
