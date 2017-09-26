@@ -82,7 +82,7 @@ class ReservationToBeMade extends React.Component {
                   <label>Email</label>
                 </div>
                 <div className='form-input'>
-                  <input type='text' value={ this.state.email } onChange={ this.handleOnChangeEmail }></input>
+                  <input type='email' value={ this.state.email } onChange={ this.handleOnChangeEmail }></input>
                 </div>
               </div>
               <div className='reservation-details'>

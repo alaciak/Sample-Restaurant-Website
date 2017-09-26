@@ -49883,7 +49883,7 @@ var ReservationToBeMade = function (_React$Component) {
                   _react2.default.createElement(
                     'div',
                     { className: 'form-input' },
-                    _react2.default.createElement('input', { type: 'text', value: this.state.email, onChange: this.handleOnChangeEmail })
+                    _react2.default.createElement('input', { type: 'email', value: this.state.email, onChange: this.handleOnChangeEmail })
                   )
                 ),
                 _react2.default.createElement(
